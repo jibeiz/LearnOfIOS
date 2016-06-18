@@ -1,0 +1,11 @@
+
+/* Class = "IBUILabel"; text = "Stay hungry. Stay foolish."; ObjectID = "Xfq-1G-FgW"; */
+"Xfq-1G-FgW.text" = "求知若渴，虚心若愚。";
+
+/* Class = "IBUINavigationItem"; title = "Title"; ObjectID = "dtH-k7-1VB"; */
+"dtH-k7-1VB.title" = "标题";
+
+/* Class = "IBUILabel"; text = "Your Name:"; ObjectID = "pGZ-mH-ptr"; */
+"pGZ-mH-ptr.text" = "您的名字:";
+
+"oQX-l8-oqz.placeholder" = "查询";

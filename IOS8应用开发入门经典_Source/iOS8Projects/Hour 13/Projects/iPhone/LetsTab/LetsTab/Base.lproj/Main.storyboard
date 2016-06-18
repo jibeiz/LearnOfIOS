@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6249" systemVersion="14A388a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="m4m-3r-jNp">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6243"/>
+    </dependencies>
+    <scenes>
+        <!--Second-->
+        <scene sceneID="D3q-ZN-90S">
+            <objects>
+                <viewController title="Second" id="fgK-f5-67w" customClass="GenericViewController" customModule="LetsTab" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pN1-2c-cCY"/>
+                        <viewControllerLayoutGuide type="bottom" id="tOC-js-lN5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="J2X-GW-USn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" minimumFontSize="10" preferredMaxLayoutWidth="186" translatesAutoresizingMaskIntoConstraints="NO" id="oH0-qD-GNP">
+                                <rect key="frame" x="94" y="165" width="186" height="152"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Scene Two" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yU2-EB-MI2">
+                                <rect key="frame" x="145" y="28" width="84" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kki-t3-d1p">
+                                <rect key="frame" x="166" y="540" width="42" height="30"/>
+                                <state key="normal" title="Count">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="incrementCountSecond:" destination="fgK-f5-67w" eventType="touchUpInside" id="Dl3-6s-UOx"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.90083759011991327" blue="0.75811151218627248" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Scene 2" image="Two" id="OaM-mf-EEg"/>
+                    <connections>
+                        <outlet property="barItem" destination="OaM-mf-EEg" id="AsG-Lx-9PZ"/>
+                        <outlet property="outputLabel" destination="oH0-qD-GNP" id="R4t-Mk-sKp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vYZ-Ef-Ktk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="758.5" y="1187.5"/>
+        </scene>
+        <!--Third-->
+        <scene sceneID="Zvr-sl-4qu">
+            <objects>
+                <viewController title="Third" id="qxw-gh-8Uq" customClass="GenericViewController" customModule="LetsTab" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pRK-sL-4UQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="F9I-Rk-ZP9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="lvN-Fb-WZ1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" minimumFontSize="10" preferredMaxLayoutWidth="186" translatesAutoresizingMaskIntoConstraints="NO" id="RVk-Cv-qTI">
+                                <rect key="frame" x="94" y="165" width="186" height="152"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JGr-Kb-nNp">
+                                <rect key="frame" x="166" y="540" width="42" height="30"/>
+                                <state key="normal" title="Count">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="incrementCountThird:" destination="qxw-gh-8Uq" eventType="touchUpInside" id="6fF-8F-7Ck"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Scene Three" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dOU-JF-a2B">
+                                <rect key="frame" x="139" y="28" width="97" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.87189456404484722" green="0.86834415153280431" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Scene 3" image="Three" id="aUS-4r-RUL"/>
+                    <connections>
+                        <outlet property="barItem" destination="aUS-4r-RUL" id="fhO-Ve-OfL"/>
+                        <outlet property="outputLabel" destination="RVk-Cv-qTI" id="Guk-7c-p24"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4t9-44-FCo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="758.5" y="2022.5"/>
+        </scene>
+        <!--First-->
+        <scene sceneID="qNo-GI-17V">
+            <objects>
+                <viewController title="First" id="6sy-MZ-n6T" customClass="GenericViewController" customModule="LetsTab" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="NUx-FO-NvV"/>
+                        <viewControllerLayoutGuide type="bottom" id="wqe-Fd-ZJ6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Wp5-Bf-Sw4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" minimumFontSize="10" preferredMaxLayoutWidth="186" translatesAutoresizingMaskIntoConstraints="NO" id="Ca1-DN-moo">
+                                <rect key="frame" x="94" y="165" width="186" height="152"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Scene One" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kGg-Sq-KPM">
+                                <rect key="frame" x="145" y="28" width="85" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cLC-Kd-4Od">
+                                <rect key="frame" x="166" y="540" width="42" height="30"/>
+                                <state key="normal" title="Count">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="incrementCountFirst:" destination="6sy-MZ-n6T" eventType="touchUpInside" id="nta-wJ-w6F"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.75443660330708873" green="1" blue="0.79748405584948767" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Scene 1" image="One" id="mpv-g0-XPg"/>
+                    <connections>
+                        <outlet property="barItem" destination="mpv-g0-XPg" id="LY5-kW-Nh6"/>
+                        <outlet property="outputLabel" destination="Ca1-DN-moo" id="tsU-c2-HkN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ddt-fI-6C1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="759" y="458"/>
+        </scene>
+        <!--Counting Tab Bar Controller-->
+        <scene sceneID="TDW-I9-nmZ">
+            <objects>
+                <tabBarController id="m4m-3r-jNp" customClass="CountingTabBarController" customModule="LetsTab" customModuleProvider="target" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="yhp-1K-ft4">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="6sy-MZ-n6T" kind="relationship" relationship="viewControllers" id="wrR-3j-sL4"/>
+                        <segue destination="fgK-f5-67w" kind="relationship" relationship="viewControllers" id="Zc9-Vl-gLu"/>
+                        <segue destination="qxw-gh-8Uq" kind="relationship" relationship="viewControllers" id="8FX-8E-Nom"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JHw-9s-fv3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-61" y="789"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="One" width="32" height="32"/>
+        <image name="Three" width="32" height="32"/>
+        <image name="Two" width="32" height="32"/>
+    </resources>
+</document>

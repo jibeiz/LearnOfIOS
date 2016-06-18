@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="Welcome" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="V9n-j5-AYM">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to iOS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="18" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9Sc-9b-6Rd">
+                                <rect key="frame" x="16" y="28" width="343" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="usm-m9-ztK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="128"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qhc-Vx-80j">
+                                <rect key="frame" x="16" y="136" width="343" height="511"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="300"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="9Sc-9b-6Rd" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="16" id="0X0-Co-c7s"/>
+                            <constraint firstAttribute="trailing" secondItem="qhc-Vx-80j" secondAttribute="trailing" constant="16" id="AaW-9J-CZF"/>
+                            <constraint firstAttribute="bottom" secondItem="V9n-j5-AYM" secondAttribute="bottom" id="D6Q-Uc-83U"/>
+                            <constraint firstItem="9Sc-9b-6Rd" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" constant="28" id="IIm-x1-G4g"/>
+                            <constraint firstItem="V9n-j5-AYM" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="Muz-N1-V9U"/>
+                            <constraint firstItem="qhc-Vx-80j" firstAttribute="top" secondItem="9Sc-9b-6Rd" secondAttribute="bottom" constant="8" id="SGE-Y4-ZkV"/>
+                            <constraint firstItem="9Sc-9b-6Rd" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="16" id="Tny-vm-0Kn"/>
+                            <constraint firstItem="qhc-Vx-80j" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="16" id="VO0-HR-dVg"/>
+                            <constraint firstAttribute="trailing" secondItem="9Sc-9b-6Rd" secondAttribute="trailing" constant="16" id="god-lr-P5G"/>
+                            <constraint firstAttribute="bottom" secondItem="qhc-Vx-80j" secondAttribute="bottom" constant="20" id="iDg-dG-vhc"/>
+                            <constraint firstAttribute="trailing" secondItem="V9n-j5-AYM" secondAttribute="trailing" id="iVa-cj-RWr"/>
+                            <constraint firstItem="V9n-j5-AYM" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="lUU-6H-dSS"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="0X0-Co-c7s"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background" width="2365" height="1777"/>
+    </resources>
+</document>

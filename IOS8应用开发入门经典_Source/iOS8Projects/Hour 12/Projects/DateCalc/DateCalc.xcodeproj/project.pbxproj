@@ -1,0 +1,426 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2706150D1A391B2500530CF4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2706150C1A391B2500530CF4 /* AppDelegate.swift */; };
+		2706150F1A391B2500530CF4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2706150E1A391B2500530CF4 /* ViewController.swift */; };
+		270615121A391B2500530CF4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 270615101A391B2500530CF4 /* Main.storyboard */; };
+		270615141A391B2500530CF4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 270615131A391B2500530CF4 /* Images.xcassets */; };
+		270615171A391B2500530CF4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 270615151A391B2500530CF4 /* LaunchScreen.xib */; };
+		270615231A391B2500530CF4 /* DateCalcTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270615221A391B2500530CF4 /* DateCalcTests.swift */; };
+		2706152D1A391B8300530CF4 /* DateChooserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2706152C1A391B8300530CF4 /* DateChooserViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2706151D1A391B2500530CF4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 270614FF1A391B2400530CF4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 270615061A391B2400530CF4;
+			remoteInfo = DateCalc;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		270615071A391B2400530CF4 /* DateCalc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DateCalc.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2706150B1A391B2500530CF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2706150C1A391B2500530CF4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2706150E1A391B2500530CF4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		270615111A391B2500530CF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		270615131A391B2500530CF4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		270615161A391B2500530CF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		2706151C1A391B2500530CF4 /* DateCalcTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DateCalcTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		270615211A391B2500530CF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		270615221A391B2500530CF4 /* DateCalcTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateCalcTests.swift; sourceTree = "<group>"; };
+		2706152C1A391B8300530CF4 /* DateChooserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateChooserViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		270615041A391B2400530CF4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		270615191A391B2500530CF4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		270614FE1A391B2400530CF4 = {
+			isa = PBXGroup;
+			children = (
+				270615091A391B2400530CF4 /* DateCalc */,
+				2706151F1A391B2500530CF4 /* DateCalcTests */,
+				270615081A391B2400530CF4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		270615081A391B2400530CF4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				270615071A391B2400530CF4 /* DateCalc.app */,
+				2706151C1A391B2500530CF4 /* DateCalcTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		270615091A391B2400530CF4 /* DateCalc */ = {
+			isa = PBXGroup;
+			children = (
+				2706150C1A391B2500530CF4 /* AppDelegate.swift */,
+				2706150E1A391B2500530CF4 /* ViewController.swift */,
+				2706152C1A391B8300530CF4 /* DateChooserViewController.swift */,
+				270615101A391B2500530CF4 /* Main.storyboard */,
+				270615131A391B2500530CF4 /* Images.xcassets */,
+				270615151A391B2500530CF4 /* LaunchScreen.xib */,
+				2706150A1A391B2500530CF4 /* Supporting Files */,
+			);
+			path = DateCalc;
+			sourceTree = "<group>";
+		};
+		2706150A1A391B2500530CF4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2706150B1A391B2500530CF4 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2706151F1A391B2500530CF4 /* DateCalcTests */ = {
+			isa = PBXGroup;
+			children = (
+				270615221A391B2500530CF4 /* DateCalcTests.swift */,
+				270615201A391B2500530CF4 /* Supporting Files */,
+			);
+			path = DateCalcTests;
+			sourceTree = "<group>";
+		};
+		270615201A391B2500530CF4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				270615211A391B2500530CF4 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		270615061A391B2400530CF4 /* DateCalc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 270615261A391B2500530CF4 /* Build configuration list for PBXNativeTarget "DateCalc" */;
+			buildPhases = (
+				270615031A391B2400530CF4 /* Sources */,
+				270615041A391B2400530CF4 /* Frameworks */,
+				270615051A391B2400530CF4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DateCalc;
+			productName = DateCalc;
+			productReference = 270615071A391B2400530CF4 /* DateCalc.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2706151B1A391B2500530CF4 /* DateCalcTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 270615291A391B2500530CF4 /* Build configuration list for PBXNativeTarget "DateCalcTests" */;
+			buildPhases = (
+				270615181A391B2500530CF4 /* Sources */,
+				270615191A391B2500530CF4 /* Frameworks */,
+				2706151A1A391B2500530CF4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2706151E1A391B2500530CF4 /* PBXTargetDependency */,
+			);
+			name = DateCalcTests;
+			productName = DateCalcTests;
+			productReference = 2706151C1A391B2500530CF4 /* DateCalcTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		270614FF1A391B2400530CF4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "John E. Ray";
+				TargetAttributes = {
+					270615061A391B2400530CF4 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					2706151B1A391B2500530CF4 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 270615061A391B2400530CF4;
+					};
+				};
+			};
+			buildConfigurationList = 270615021A391B2400530CF4 /* Build configuration list for PBXProject "DateCalc" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 270614FE1A391B2400530CF4;
+			productRefGroup = 270615081A391B2400530CF4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				270615061A391B2400530CF4 /* DateCalc */,
+				2706151B1A391B2500530CF4 /* DateCalcTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		270615051A391B2400530CF4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				270615121A391B2500530CF4 /* Main.storyboard in Resources */,
+				270615171A391B2500530CF4 /* LaunchScreen.xib in Resources */,
+				270615141A391B2500530CF4 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2706151A1A391B2500530CF4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		270615031A391B2400530CF4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2706150F1A391B2500530CF4 /* ViewController.swift in Sources */,
+				2706150D1A391B2500530CF4 /* AppDelegate.swift in Sources */,
+				2706152D1A391B8300530CF4 /* DateChooserViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		270615181A391B2500530CF4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				270615231A391B2500530CF4 /* DateCalcTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2706151E1A391B2500530CF4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 270615061A391B2400530CF4 /* DateCalc */;
+			targetProxy = 2706151D1A391B2500530CF4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		270615101A391B2500530CF4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				270615111A391B2500530CF4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		270615151A391B2500530CF4 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				270615161A391B2500530CF4 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		270615241A391B2500530CF4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		270615251A391B2500530CF4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		270615271A391B2500530CF4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DateCalc/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		270615281A391B2500530CF4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DateCalc/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		2706152A1A391B2500530CF4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = DateCalcTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DateCalc.app/DateCalc";
+			};
+			name = Debug;
+		};
+		2706152B1A391B2500530CF4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = DateCalcTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DateCalc.app/DateCalc";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		270615021A391B2400530CF4 /* Build configuration list for PBXProject "DateCalc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				270615241A391B2500530CF4 /* Debug */,
+				270615251A391B2500530CF4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		270615261A391B2500530CF4 /* Build configuration list for PBXNativeTarget "DateCalc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				270615271A391B2500530CF4 /* Debug */,
+				270615281A391B2500530CF4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		270615291A391B2500530CF4 /* Build configuration list for PBXNativeTarget "DateCalcTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2706152A1A391B2500530CF4 /* Debug */,
+				2706152B1A391B2500530CF4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 270614FF1A391B2400530CF4 /* Project object */;
+}

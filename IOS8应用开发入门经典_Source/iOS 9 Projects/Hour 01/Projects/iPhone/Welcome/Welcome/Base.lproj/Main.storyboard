@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Welcome" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="E5E-Ie-inT">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eNi-Ql-wtV">
+                                <rect key="frame" x="16" y="156" width="568" height="444"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="300"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="17" height="29"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to iOS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="18" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NPE-AS-1aj">
+                                <rect key="frame" x="16" y="0.0" width="568" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="XHq-jl-Bs5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="128"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="2" height="2"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="eNi-Ql-wtV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2rB-4k-F6Q"/>
+                            <constraint firstItem="NPE-AS-1aj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-4" id="349-8S-UOd"/>
+                            <constraint firstItem="NPE-AS-1aj" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-20" id="4eP-SN-MaS"/>
+                            <constraint firstItem="eNi-Ql-wtV" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="87I-Ea-qpC"/>
+                            <constraint firstItem="E5E-Ie-inT" firstAttribute="centerX" secondItem="eNi-Ql-wtV" secondAttribute="centerX" id="9WS-Q1-he8"/>
+                            <constraint firstItem="E5E-Ie-inT" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="EUD-ZX-BWc"/>
+                            <constraint firstItem="eNi-Ql-wtV" firstAttribute="top" secondItem="NPE-AS-1aj" secondAttribute="bottom" constant="56" id="OFj-ku-dr8"/>
+                            <constraint firstItem="eNi-Ql-wtV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-4" id="RmB-Jp-FyG"/>
+                            <constraint firstItem="E5E-Ie-inT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="arJ-MJ-oXF"/>
+                            <constraint firstItem="NPE-AS-1aj" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" constant="4" id="b8d-7b-wbG"/>
+                            <constraint firstItem="E5E-Ie-inT" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="cIs-Yz-bXI"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="282" y="311"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background" width="2448" height="1883"/>
+    </resources>
+</document>

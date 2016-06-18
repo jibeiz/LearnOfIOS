@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6724" systemVersion="14C78c" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6711"/>
+    </dependencies>
+    <scenes>
+        <!--Initial-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" userLabel="Initial" customClass="ViewController" customModule="CustomPicker" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZUT-F9-mrD">
+                                <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                                <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="pAe-77-1Rc"/>
+                                    <barButtonItem title="Choose an Animal and Sound" id="3G7-i0-3Ul">
+                                        <connections>
+                                            <segue destination="wJG-hY-zb0" kind="popoverPresentation" popoverAnchorBarButtonItem="3G7-i0-3Ul" id="JHa-qJ-ApC">
+                                                <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                            </segue>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="JOM-Fu-nB1"/>
+                                </items>
+                            </toolbar>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Nothing Selected" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="5" minimumFontSize="10" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="mmE-DP-ozm">
+                                <rect key="frame" x="224" y="287.5" width="152" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="mmE-DP-ozm" secondAttribute="centerY" id="612-be-vM6"/>
+                            <constraint firstAttribute="centerX" secondItem="mmE-DP-ozm" secondAttribute="centerX" id="M7m-km-M34"/>
+                            <constraint firstAttribute="bottom" secondItem="ZUT-F9-mrD" secondAttribute="bottom" id="bYm-XJ-INO"/>
+                            <constraint firstAttribute="trailing" secondItem="ZUT-F9-mrD" secondAttribute="trailing" id="ctw-b0-e8Z"/>
+                            <constraint firstItem="ZUT-F9-mrD" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="jnK-F6-w5G"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="outputLabel" destination="mmE-DP-ozm" id="sE9-cp-M3b"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="422" y="331"/>
+        </scene>
+        <!--Animal Chooser-->
+        <scene sceneID="0fX-Sq-mFU">
+            <objects>
+                <viewController id="wJG-hY-zb0" userLabel="Animal Chooser" customClass="AnimalChooserViewController" customModule="CustomPicker" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="d4m-tz-L4k"/>
+                        <viewControllerLayoutGuide type="bottom" id="wDy-oN-f4y"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8Kk-6w-hVP">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Please Pick an Animal and Sound" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="GhX-Q3-U4t">
+                                <rect key="frame" x="152.5" y="28" width="296" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bdJ-eG-l9O">
+                                <rect key="frame" x="0.0" y="88" width="600" height="162"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="wJG-hY-zb0" id="Fvk-VE-sud"/>
+                                    <outlet property="delegate" destination="wJG-hY-zb0" id="qTX-lZ-Agv"/>
+                                </connections>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ax1-Im-3S9">
+                                <rect key="frame" x="281" y="550" width="37" height="30"/>
+                                <state key="normal" title="Done">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="dismissAnimalChooser:" destination="wJG-hY-zb0" eventType="touchUpInside" id="gFR-PG-vjw"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96795070169999997" green="0.92659599729999997" blue="0.85696856619999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="GhX-Q3-U4t" secondAttribute="centerX" id="5cD-ES-MyD"/>
+                            <constraint firstItem="bdJ-eG-l9O" firstAttribute="top" secondItem="8Kk-6w-hVP" secondAttribute="top" constant="88" id="6bW-k4-F6Q"/>
+                            <constraint firstAttribute="trailing" secondItem="bdJ-eG-l9O" secondAttribute="trailing" id="A2G-fV-0e3"/>
+                            <constraint firstAttribute="bottom" secondItem="Ax1-Im-3S9" secondAttribute="bottom" constant="20" id="PdN-fl-AyJ"/>
+                            <constraint firstItem="GhX-Q3-U4t" firstAttribute="top" secondItem="8Kk-6w-hVP" secondAttribute="top" constant="28" id="RAu-Y3-RhK"/>
+                            <constraint firstAttribute="centerX" secondItem="Ax1-Im-3S9" secondAttribute="centerX" id="iJW-GQ-vpj"/>
+                            <constraint firstItem="bdJ-eG-l9O" firstAttribute="leading" secondItem="8Kk-6w-hVP" secondAttribute="leading" id="oDR-YA-AMS"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GHY-YM-AN6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1204" y="331"/>
+        </scene>
+    </scenes>
+</document>

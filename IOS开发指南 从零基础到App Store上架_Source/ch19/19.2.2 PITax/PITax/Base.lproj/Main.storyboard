@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="9Mq-9Z-lHB">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller - 计算个人所得税-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="w4G-cG-Mnt"/>
+                        <viewControllerLayoutGuide type="bottom" id="i1f-Kq-BuE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7YV-7C-Zrx">
+                                <rect key="frame" x="36" y="117" width="258" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="4M6-yh-3v2"/>
+                                    <constraint firstAttribute="width" constant="258" id="fa2-ti-57D"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad" returnKeyType="next"/>
+                            </textField>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="月应纳个人所得税税额:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E3H-5d-Yje">
+                                <rect key="frame" x="50" y="253" width="175" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m4m-2F-Fgj">
+                                <rect key="frame" x="22" y="187" width="260" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="260" id="5A9-5C-E43"/>
+                                    <constraint firstAttribute="height" constant="30" id="d4g-4W-MO6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="计算">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onClick:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="fBK-S2-Brf"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="0.00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J6j-2j-3el">
+                                <rect key="frame" x="56" y="308" width="159" height="28"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="saZ-w7-edV"/>
+                                    <constraint firstAttribute="width" constant="159" id="xx5-nE-0MW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="7YV-7C-Zrx" firstAttribute="trailing" secondItem="m4m-2F-Fgj" secondAttribute="trailing" constant="12" id="1JV-Ao-8tW"/>
+                            <constraint firstItem="J6j-2j-3el" firstAttribute="top" secondItem="m4m-2F-Fgj" secondAttribute="bottom" constant="91" id="5ox-S6-G6o"/>
+                            <constraint firstItem="J6j-2j-3el" firstAttribute="trailing" secondItem="m4m-2F-Fgj" secondAttribute="trailing" constant="-67" id="EMe-lU-L7f"/>
+                            <constraint firstItem="m4m-2F-Fgj" firstAttribute="top" secondItem="7YV-7C-Zrx" secondAttribute="bottom" constant="40" id="OFB-IY-nhF"/>
+                            <constraint firstItem="m4m-2F-Fgj" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="22" id="hbe-JD-nG7"/>
+                            <constraint firstItem="m4m-2F-Fgj" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" constant="187" id="qxe-Ad-W4I"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="计算个人所得税" id="mfw-EU-izJ"/>
+                    <connections>
+                        <outlet property="lblTax" destination="J6j-2j-3el" id="TjV-TR-gNU"/>
+                        <outlet property="txtRevenue" destination="7YV-7C-Zrx" id="zF1-Z1-OeT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="678" y="121"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="1nj-ce-ZHN">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="9Mq-9Z-lHB" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="S8m-2g-gDd">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="neq-1W-emC"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bdX-Ni-7zk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="213" y="129"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>

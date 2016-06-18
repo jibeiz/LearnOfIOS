@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="aTS-TY-4E9"/>
+                        <viewControllerLayoutGuide type="bottom" id="xyO-GF-RTU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XOb-7F-NEz">
+                                <rect key="frame" x="0.0" y="17" width="320" height="44"/>
+                                <items>
+                                    <navigationItem title="Title" id="dtH-k7-1VB">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="done" id="3SG-fC-c3L"/>
+                                        <barButtonItem key="rightBarButtonItem" systemItem="edit" id="sVA-MZ-4ez"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stay hungry. Stay foolish." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xfq-1G-FgW">
+                                <rect key="frame" x="62" y="146" width="195" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Name:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pGZ-mH-ptr">
+                                <rect key="frame" x="20" y="231" width="90" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Search" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oQX-l8-oqz">
+                                <rect key="frame" x="115" y="225" width="185" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="oQX-l8-oqz" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="0kY-Yz-Ovn"/>
+                            <constraint firstAttribute="trailing" secondItem="XOb-7F-NEz" secondAttribute="trailing" id="1Cc-OV-iFZ"/>
+                            <constraint firstAttribute="trailing" secondItem="oQX-l8-oqz" secondAttribute="trailing" constant="20" symbolic="YES" id="33u-Mr-yvY"/>
+                            <constraint firstItem="Xfq-1G-FgW" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="62" id="3a6-zS-lZ2"/>
+                            <constraint firstItem="oQX-l8-oqz" firstAttribute="top" secondItem="Xfq-1G-FgW" secondAttribute="bottom" constant="58" id="PMJ-Lv-c9g"/>
+                            <constraint firstItem="pGZ-mH-ptr" firstAttribute="top" secondItem="Xfq-1G-FgW" secondAttribute="bottom" constant="64" id="WlM-xu-6LM"/>
+                            <constraint firstItem="pGZ-mH-ptr" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" symbolic="YES" id="c4X-PQ-zlc"/>
+                            <constraint firstItem="oQX-l8-oqz" firstAttribute="leading" secondItem="pGZ-mH-ptr" secondAttribute="trailing" constant="5" id="l5m-K6-uGK"/>
+                            <constraint firstItem="XOb-7F-NEz" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="ntJ-JP-520"/>
+                            <constraint firstItem="Xfq-1G-FgW" firstAttribute="top" secondItem="XOb-7F-NEz" secondAttribute="bottom" constant="85" id="rpj-Aq-fI4"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="navItem" destination="dtH-k7-1VB" id="8n4-Dy-AXN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>

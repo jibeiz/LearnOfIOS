@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9gc-In-HBQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="d1c-te-i7K"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" misplaced="YES" text="Name:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZIS-qL-ln4">
+                                <rect key="frame" x="20" y="109" width="51" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" misplaced="YES" text="Abstract:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M3m-dO-ask">
+                                <rect key="frame" x="20" y="225" width="70" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vZH-sZ-580">
+                                <rect key="frame" x="34" y="266" width="253" height="242"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="242" id="fLD-NR-O2m"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <connections>
+                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="xBp-sg-HQy"/>
+                                </connections>
+                            </textView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="enter your book name" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="FRo-R1-sCN">
+                                <rect key="frame" x="34" y="166" width="163" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="vQo-yf-euH"/>
+                                </connections>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="vZH-sZ-580" firstAttribute="leading" secondItem="FRo-R1-sCN" secondAttribute="leading" id="02e-Nc-TfQ"/>
+                            <constraint firstItem="d1c-te-i7K" firstAttribute="top" secondItem="vZH-sZ-580" secondAttribute="bottom" constant="176" id="DIT-o3-ZDB"/>
+                            <constraint firstItem="M3m-dO-ask" firstAttribute="top" secondItem="FRo-R1-sCN" secondAttribute="bottom" constant="17" id="FeV-Le-2V3"/>
+                            <constraint firstItem="FRo-R1-sCN" firstAttribute="top" secondItem="ZIS-qL-ln4" secondAttribute="bottom" constant="3" id="OkP-zg-Ean"/>
+                            <constraint firstItem="vZH-sZ-580" firstAttribute="top" secondItem="M3m-dO-ask" secondAttribute="bottom" constant="2" id="Ygw-HQ-q0Q"/>
+                            <constraint firstItem="vZH-sZ-580" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="47" id="dHZ-na-KPN"/>
+                            <constraint firstItem="M3m-dO-ask" firstAttribute="leading" secondItem="ZIS-qL-ln4" secondAttribute="leading" id="lE2-SD-NUC"/>
+                            <constraint firstAttribute="trailing" secondItem="vZH-sZ-580" secondAttribute="trailing" constant="20" symbolic="YES" id="nWv-gO-M6R"/>
+                            <constraint firstItem="M3m-dO-ask" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" symbolic="YES" id="pnG-dp-ZsN"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ITW-jG-8Nd"/>
+                        <viewControllerLayoutGuide type="bottom" id="puz-Xf-L44"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="mo3-QO-pOn">
+                                <rect key="frame" x="134" y="80" width="37" height="37"/>
+                            </activityIndicatorView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0mg-RV-J8A">
+                                <rect key="frame" x="105" y="382" width="104" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="104" id="5vU-9t-6Gc"/>
+                                </constraints>
+                                <state key="normal" title="Download">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="downloadProgress:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="rdX-jB-IiG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gLe-Uy-mbc">
+                                <rect key="frame" x="100" y="155" width="104" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="104" id="lJM-OH-qAt"/>
+                                </constraints>
+                                <state key="normal" title="Upload">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="startToMove:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="f8j-mw-WkD"/>
+                                </connections>
+                            </button>
+                            <progressView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1DG-Fy-7Zi">
+                                <rect key="frame" x="20" y="317" width="285" height="2"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="285" id="MrK-Kd-Lt6"/>
+                                </constraints>
+                            </progressView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="gLe-Uy-mbc" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" constant="155" id="ADc-IL-IsA"/>
+                            <constraint firstItem="1DG-Fy-7Zi" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" symbolic="YES" id="Egv-Yz-YNu"/>
+                            <constraint firstItem="0mg-RV-J8A" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="105" id="I5g-zi-X7D"/>
+                            <constraint firstItem="mo3-QO-pOn" firstAttribute="centerX" secondItem="gLe-Uy-mbc" secondAttribute="centerX" id="Jzu-St-LnJ"/>
+                            <constraint firstItem="0mg-RV-J8A" firstAttribute="top" secondItem="1DG-Fy-7Zi" secondAttribute="bottom" constant="63" id="QZ3-Ey-Es7"/>
+                            <constraint firstItem="gLe-Uy-mbc" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="100" id="YaR-RB-Y9O"/>
+                            <constraint firstAttribute="bottom" secondItem="1DG-Fy-7Zi" secondAttribute="bottom" constant="249" id="e5N-7f-ii8"/>
+                            <constraint firstItem="gLe-Uy-mbc" firstAttribute="top" secondItem="mo3-QO-pOn" secondAttribute="bottom" constant="38" id="sV6-zO-Uzs"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="myActivityIndicatorView" destination="mo3-QO-pOn" id="KFM-e3-ulA"/>
+                        <outlet property="myProgressView" destination="1DG-Fy-7Zi" id="n1S-bh-ETh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

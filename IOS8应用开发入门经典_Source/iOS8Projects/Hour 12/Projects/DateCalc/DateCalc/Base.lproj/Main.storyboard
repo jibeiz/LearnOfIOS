@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6724" systemVersion="14C78c" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6711"/>
+    </dependencies>
+    <scenes>
+        <!--Initial-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" userLabel="Initial" customClass="ViewController" customModule="DateCalc" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" misplaced="YES" text="No Date Selected" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="5" minimumFontSize="10" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="Lgp-hH-Isp">
+                                <rect key="frame" x="228" y="289" width="142" height="21.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PJ7-r4-3c8">
+                                <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                                <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="3um-FX-AIb"/>
+                                    <barButtonItem title="Choose a Date" id="5Cw-Jw-O76">
+                                        <connections>
+                                            <segue destination="lnE-bk-kkC" kind="popoverPresentation" popoverAnchorBarButtonItem="5Cw-Jw-O76" id="tbt-5c-sOa">
+                                                <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                            </segue>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="98O-Qe-zO7"/>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="Lgp-hH-Isp" secondAttribute="centerY" id="LUe-zs-fNd"/>
+                            <constraint firstItem="PJ7-r4-3c8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="cdI-WC-6TE"/>
+                            <constraint firstAttribute="trailing" secondItem="PJ7-r4-3c8" secondAttribute="trailing" id="eIS-JE-c9b"/>
+                            <constraint firstAttribute="bottom" secondItem="PJ7-r4-3c8" secondAttribute="bottom" id="juP-rh-5Nj"/>
+                            <constraint firstAttribute="centerX" secondItem="Lgp-hH-Isp" secondAttribute="centerX" id="ogk-c0-L1p"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="outputLabel" destination="Lgp-hH-Isp" id="Cx6-HX-2dG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="439.5" y="358.5"/>
+        </scene>
+        <!--Date Chooser-->
+        <scene sceneID="HzZ-7C-lfb">
+            <objects>
+                <viewController id="lnE-bk-kkC" userLabel="Date Chooser" customClass="DateChooserViewController" customModule="DateCalc" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vFK-QX-VP0"/>
+                        <viewControllerLayoutGuide type="bottom" id="j1g-X2-W7V"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7Vf-vk-XeH">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Please Pick a Date" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" minimumFontSize="10" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="zeV-vD-76a">
+                                <rect key="frame" x="217" y="28" width="165" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="oLq-9b-Vy4">
+                                <rect key="frame" x="0.0" y="83" width="600" height="162"/>
+                                <date key="date" timeIntervalSinceReferenceDate="339380282.87456101">
+                                    <!--2011-10-04 00:18:02 +0000-->
+                                </date>
+                                <locale key="locale" localeIdentifier="en_US"/>
+                                <connections>
+                                    <action selector="setDateTime:" destination="lnE-bk-kkC" eventType="valueChanged" id="0eb-6x-C5W"/>
+                                </connections>
+                            </datePicker>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hvd-4S-KlX">
+                                <rect key="frame" x="279" y="547" width="41" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Done">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="dismissDateChooser:" destination="lnE-bk-kkC" eventType="touchUpInside" id="3Fv-KC-K8T"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96795070169999997" green="0.92659599729999997" blue="0.85696856619999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="hvd-4S-KlX" secondAttribute="centerX" id="4VS-M8-clg"/>
+                            <constraint firstAttribute="bottom" secondItem="hvd-4S-KlX" secondAttribute="bottom" constant="20" id="6OB-IT-7NS"/>
+                            <constraint firstItem="oLq-9b-Vy4" firstAttribute="leading" secondItem="7Vf-vk-XeH" secondAttribute="leading" id="BkB-bw-NfE"/>
+                            <constraint firstItem="zeV-vD-76a" firstAttribute="top" secondItem="7Vf-vk-XeH" secondAttribute="top" constant="28" id="Bu6-Yw-xXw"/>
+                            <constraint firstAttribute="centerY" secondItem="hvd-4S-KlX" secondAttribute="centerY" constant="-297" id="M7V-Vs-dNS"/>
+                            <constraint firstItem="oLq-9b-Vy4" firstAttribute="top" secondItem="7Vf-vk-XeH" secondAttribute="top" constant="83" id="TjN-Ob-ySJ"/>
+                            <constraint firstAttribute="centerX" secondItem="zeV-vD-76a" secondAttribute="centerX" id="VqB-lF-7lZ"/>
+                            <constraint firstAttribute="trailing" secondItem="oLq-9b-Vy4" secondAttribute="trailing" id="W7e-bS-usf"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="M7V-Vs-dNS"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="600" height="600"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9n1-Zz-OLY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1203" y="358"/>
+        </scene>
+    </scenes>
+</document>

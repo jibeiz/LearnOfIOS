@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6246" systemVersion="14A361c" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6239"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="Disconnected" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Chosen Color:" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="I7D-CA-joj">
+                                <rect key="frame" x="50" y="101" width="93" height="17"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <webView contentMode="scaleToFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rr5-nI-6Lt">
+                                <rect key="frame" x="16" y="140" width="343" height="507"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </webView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="CeW-Hc-swa">
+                                <rect key="frame" x="16" y="55" width="343" height="29"/>
+                                <segments>
+                                    <segment title="Red"/>
+                                    <segment title="Blue"/>
+                                    <segment title="Yellow"/>
+                                    <segment title="Green"/>
+                                </segments>
+                            </segmentedControl>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Your Color" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="Pes-0L-Ldi">
+                                <rect key="frame" x="147" y="101" width="81" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="81" id="5A3-c3-zgT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aTz-A0-lK4">
+                                <rect key="frame" x="249" y="98" width="81" height="20"/>
+                                <state key="normal" title="Get Flower">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="getFlower:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="XKm-Pc-n6L"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96795070171356201" green="0.92659599729952946" blue="0.85696856620298389" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="rr5-nI-6Lt" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="27Z-W9-kPo"/>
+                            <constraint firstItem="CeW-Hc-swa" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="4dB-QN-0qP"/>
+                            <constraint firstItem="I7D-CA-joj" firstAttribute="top" secondItem="CeW-Hc-swa" secondAttribute="bottom" constant="18" id="Fpl-CK-HQn"/>
+                            <constraint firstAttribute="bottom" secondItem="rr5-nI-6Lt" secondAttribute="bottom" constant="20" symbolic="YES" id="HIZ-4N-swf"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="aTz-A0-lK4" secondAttribute="trailing" constant="29" id="K5q-YF-798"/>
+                            <constraint firstItem="aTz-A0-lK4" firstAttribute="bottom" secondItem="Pes-0L-Ldi" secondAttribute="bottom" id="LIg-H9-EWR"/>
+                            <constraint firstItem="rr5-nI-6Lt" firstAttribute="leading" secondItem="CeW-Hc-swa" secondAttribute="leading" id="M66-Sv-HnS"/>
+                            <constraint firstItem="CeW-Hc-swa" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="35" id="eFf-eT-aqt"/>
+                            <constraint firstItem="rr5-nI-6Lt" firstAttribute="top" secondItem="I7D-CA-joj" secondAttribute="bottom" constant="22" id="fJf-el-6fD"/>
+                            <constraint firstItem="aTz-A0-lK4" firstAttribute="top" secondItem="CeW-Hc-swa" secondAttribute="bottom" constant="15" id="goT-Sd-A7w"/>
+                            <constraint firstItem="CeW-Hc-swa" firstAttribute="centerX" secondItem="Pes-0L-Ldi" secondAttribute="centerX" id="hpZ-It-Xgw"/>
+                            <constraint firstItem="CeW-Hc-swa" firstAttribute="trailing" secondItem="rr5-nI-6Lt" secondAttribute="trailing" id="jz7-aT-XPI"/>
+                            <constraint firstItem="Pes-0L-Ldi" firstAttribute="leading" secondItem="I7D-CA-joj" secondAttribute="trailing" constant="4" id="k6d-ht-e5s"/>
+                            <constraint firstItem="Pes-0L-Ldi" firstAttribute="baseline" secondItem="I7D-CA-joj" secondAttribute="firstBaseline" id="mmc-x7-VOa"/>
+                            <constraint firstItem="aTz-A0-lK4" firstAttribute="leading" secondItem="Pes-0L-Ldi" secondAttribute="trailing" constant="21" id="vce-5C-kib"/>
+                            <constraint firstItem="I7D-CA-joj" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="34" id="zxk-uS-Pmf"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="chosenColor" destination="Pes-0L-Ldi" id="XRM-At-ZbR"/>
+                        <outlet property="colorChoice" destination="CeW-Hc-swa" id="OoJ-I3-MaT"/>
+                        <outlet property="flowerView" destination="rr5-nI-6Lt" id="jQX-Y9-BUR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="279.5" y="314.5"/>
+        </scene>
+    </scenes>
+</document>

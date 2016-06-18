@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>1DF3E117-17CC-41F6-A89E-7E4D9541113F</string>
+	<key>IDESourceControlProjectName</key>
+	<string>NavigationComb</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>44733B5B-235D-4D00-9083-0FD1EEFE84AF</key>
+		<string>ssh://github.com/eorient01/iosbook1_code.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>ch06/6.5.2 NavigationComb/NavigationComb.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>44733B5B-235D-4D00-9083-0FD1EEFE84AF</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/eorient01/iosbook1_code.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>44733B5B-235D-4D00-9083-0FD1EEFE84AF</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>44733B5B-235D-4D00-9083-0FD1EEFE84AF</string>
+			<key>IDESourceControlWCCName</key>
+			<string>代码</string>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>4A91AA53-36D6-47A1-A379-F0BC307C41EB</string>
+	<key>IDESourceControlProjectName</key>
+	<string>PITax</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>01ED0504-8DC9-4E4F-B281-46857A83D55B</key>
+		<string>ssh://github.com/eorient01/iosbook1_code.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>ch16/16.1 PITax/PITax.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>01ED0504-8DC9-4E4F-B281-46857A83D55B</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/eorient01/iosbook1_code.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>01ED0504-8DC9-4E4F-B281-46857A83D55B</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>01ED0504-8DC9-4E4F-B281-46857A83D55B</string>
+			<key>IDESourceControlWCCName</key>
+			<string>代码</string>
+		</dict>
+	</array>
+</dict>
+</plist>

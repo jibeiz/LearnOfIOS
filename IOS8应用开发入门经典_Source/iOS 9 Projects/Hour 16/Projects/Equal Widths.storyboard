@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Dhp-hi-XIv">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="c7G-Ds-aCO">
+            <objects>
+                <viewController id="Dhp-hi-XIv" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="yzz-SJ-S4q"/>
+                        <viewControllerLayoutGuide type="bottom" id="cGS-Qf-T2x"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="24k-UG-4Ch">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ELj-n0-auo">
+                                <rect key="frame" x="26" y="285" width="155.5" height="30"/>
+                                <animations/>
+                                <color key="backgroundColor" red="1" green="0.90083759009999997" blue="0.75811151219999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Button A">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yyw-9z-ITf">
+                                <rect key="frame" x="222" y="285" width="155" height="30"/>
+                                <animations/>
+                                <color key="backgroundColor" red="1" green="0.90083759009999997" blue="0.75811151219999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Button B">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DFg-nv-eHJ">
+                                <rect key="frame" x="424" y="285" width="155.5" height="30"/>
+                                <animations/>
+                                <color key="backgroundColor" red="1" green="0.90083759009999997" blue="0.75811151219999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Button C">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="yyw-9z-ITf" firstAttribute="centerX" secondItem="24k-UG-4Ch" secondAttribute="centerX" id="06K-37-5cN"/>
+                            <constraint firstItem="yyw-9z-ITf" firstAttribute="width" secondItem="ELj-n0-auo" secondAttribute="width" id="07q-bB-C2O"/>
+                            <constraint firstItem="ELj-n0-auo" firstAttribute="leading" secondItem="24k-UG-4Ch" secondAttribute="leading" constant="26" id="2ek-lf-KGh"/>
+                            <constraint firstItem="ELj-n0-auo" firstAttribute="baseline" secondItem="yyw-9z-ITf" secondAttribute="baseline" id="EfZ-Nr-0jj"/>
+                            <constraint firstItem="DFg-nv-eHJ" firstAttribute="leading" secondItem="yyw-9z-ITf" secondAttribute="trailing" constant="47" id="IRV-ww-FWr"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="DFg-nv-eHJ" secondAttribute="trailing" constant="20" id="QDX-HI-9HS"/>
+                            <constraint firstItem="yyw-9z-ITf" firstAttribute="leading" secondItem="ELj-n0-auo" secondAttribute="trailing" constant="41" id="QDf-7k-qtA"/>
+                            <constraint firstItem="yyw-9z-ITf" firstAttribute="baseline" secondItem="DFg-nv-eHJ" secondAttribute="baseline" id="Vhg-Ai-NQe"/>
+                            <constraint firstItem="yyw-9z-ITf" firstAttribute="centerY" secondItem="24k-UG-4Ch" secondAttribute="centerY" id="bFH-HF-wwU"/>
+                            <constraint firstAttribute="trailing" secondItem="DFg-nv-eHJ" secondAttribute="trailing" constant="20" symbolic="YES" id="mtU-u7-sRS"/>
+                            <constraint firstItem="yyw-9z-ITf" firstAttribute="leading" secondItem="ELj-n0-auo" secondAttribute="trailing" constant="41" id="nCG-wN-DQ0"/>
+                            <constraint firstItem="yyw-9z-ITf" firstAttribute="width" secondItem="DFg-nv-eHJ" secondAttribute="width" id="zhJ-TH-l8Z"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="j01-aA-Fxo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="476.25" y="68.661971830985905"/>
+        </scene>
+    </scenes>
+</document>

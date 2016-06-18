@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="h8v-AQ-rrq">
+    <dependencies>
+        <deployment defaultVersion="1536" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="1XY-1b-qHK">
+            <objects>
+                <tableViewController id="h8v-AQ-rrq" customClass="ViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="49" sectionHeaderHeight="22" sectionFooterHeight="22" id="2Wm-ud-wBu">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="50" id="7Yi-ZK-Txj" customClass="CustomCell">
+                                <rect key="frame" x="0.0" y="22" width="320" height="50"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7Yi-ZK-Txj" id="TVv-QV-dZf">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tQN-pl-ld5">
+                                            <rect key="frame" x="19" y="12" width="189" height="26"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="26" id="2Ux-bn-bTW"/>
+                                                <constraint firstAttribute="width" constant="189" id="hSy-o6-BEr"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ime-n0-Thk">
+                                            <rect key="frame" x="230" y="12" width="37" height="24"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="24" id="B1Z-zZ-nhu"/>
+                                                <constraint firstAttribute="width" constant="37" id="xUW-hj-m4l"/>
+                                            </constraints>
+                                        </imageView>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <constraints>
+                                    <constraint firstItem="tQN-pl-ld5" firstAttribute="centerY" secondItem="7Yi-ZK-Txj" secondAttribute="centerY" id="YEx-ow-Wg4"/>
+                                    <constraint firstItem="Ime-n0-Thk" firstAttribute="top" secondItem="tQN-pl-ld5" secondAttribute="top" id="gOT-f5-pcL"/>
+                                    <constraint firstAttribute="trailing" secondItem="Ime-n0-Thk" secondAttribute="trailing" constant="53" id="oLj-IQ-exW"/>
+                                    <constraint firstItem="tQN-pl-ld5" firstAttribute="leading" secondItem="7Yi-ZK-Txj" secondAttribute="leading" constant="19" id="xSZ-3b-Cx4"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="image" destination="Ime-n0-Thk" id="tzM-IA-pY8"/>
+                                    <outlet property="name" destination="tQN-pl-ld5" id="LlR-4d-2g3"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="h8v-AQ-rrq" id="oS7-yn-ok7"/>
+                            <outlet property="delegate" destination="h8v-AQ-rrq" id="xfM-9p-QYK"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pZM-dd-g7J" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="295" y="61"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>

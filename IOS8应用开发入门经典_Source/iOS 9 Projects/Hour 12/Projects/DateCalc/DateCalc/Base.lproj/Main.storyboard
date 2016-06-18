@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--Initial-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" userLabel="Initial" customClass="ViewController" customModule="DateCalc" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9AK-Q4-rr9">
+                                <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                                <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="w4q-4D-U7h"/>
+                                    <barButtonItem title="Choose a Date" id="pcE-Jc-ZIU">
+                                        <connections>
+                                            <segue destination="8DS-QS-g8A" kind="popoverPresentation" popoverAnchorBarButtonItem="pcE-Jc-ZIU" id="4aA-0L-LdV">
+                                                <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                            </segue>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="McL-9M-eDC"/>
+                                </items>
+                            </toolbar>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="No Date Selected" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="5" minimumFontSize="10" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="lwB-f4-atM">
+                                <rect key="frame" x="135" y="160" width="331" height="154"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="154" id="FHD-Al-qkl"/>
+                                    <constraint firstAttribute="width" constant="331" id="Sdv-MM-0tb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="lwB-f4-atM" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="140" id="FnI-9F-ukD"/>
+                            <constraint firstItem="9AK-Q4-rr9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="MlA-4f-dAH"/>
+                            <constraint firstItem="lwB-f4-atM" firstAttribute="centerX" secondItem="9AK-Q4-rr9" secondAttribute="centerX" id="Pdn-px-33D"/>
+                            <constraint firstItem="9AK-Q4-rr9" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="gHV-tb-aAh"/>
+                            <constraint firstAttribute="trailing" secondItem="9AK-Q4-rr9" secondAttribute="trailing" id="n7n-jt-ACH"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="outputLabel" destination="lwB-f4-atM" id="PJK-js-bca"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="26" y="402"/>
+        </scene>
+        <!--Date Chooser-->
+        <scene sceneID="x1f-Ow-z7t">
+            <objects>
+                <viewController id="8DS-QS-g8A" userLabel="Date Chooser" customClass="DateChooserViewController" customModule="DateCalc" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Y36-ev-iR1"/>
+                        <viewControllerLayoutGuide type="bottom" id="v3z-5v-gLD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="s7c-Lw-oaD">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Please Pick a Date" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" minimumFontSize="10" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="DOm-BQ-oQ2">
+                                <rect key="frame" x="218" y="77" width="165" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="165" id="zRK-Qs-r5F"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rtU-WK-cps">
+                                <rect key="frame" x="280" y="547" width="41" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Done">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="dismissDateChooser:" destination="8DS-QS-g8A" eventType="touchUpInside" id="zeX-WK-nid"/>
+                                </connections>
+                            </button>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="aSa-zi-Rqz">
+                                <rect key="frame" x="0.0" y="117" width="600" height="162"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="162" id="9Hn-Uk-Hdk"/>
+                                </constraints>
+                                <date key="date" timeIntervalSinceReferenceDate="339380282.87456101">
+                                    <!--2011-10-04 00:18:02 +0000-->
+                                </date>
+                                <locale key="locale" localeIdentifier="en_US"/>
+                                <connections>
+                                    <action selector="setDateTime:" destination="8DS-QS-g8A" eventType="valueChanged" id="B1e-t0-MV9"/>
+                                </connections>
+                            </datePicker>
+                        </subviews>
+                        <color key="backgroundColor" red="0.95651348370190326" green="0.9713057559686249" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="aSa-zi-Rqz" firstAttribute="centerX" secondItem="rtU-WK-cps" secondAttribute="centerX" id="2dV-IG-Dbf"/>
+                            <constraint firstItem="aSa-zi-Rqz" firstAttribute="leading" secondItem="s7c-Lw-oaD" secondAttribute="leading" id="3Mv-1N-t88"/>
+                            <constraint firstAttribute="trailing" secondItem="aSa-zi-Rqz" secondAttribute="trailing" id="FeJ-VK-mp1"/>
+                            <constraint firstItem="aSa-zi-Rqz" firstAttribute="centerX" secondItem="DOm-BQ-oQ2" secondAttribute="centerX" id="SEw-iz-bzu"/>
+                            <constraint firstAttribute="bottom" secondItem="rtU-WK-cps" secondAttribute="bottom" constant="20" symbolic="YES" id="UXh-eJ-lKS"/>
+                            <constraint firstItem="DOm-BQ-oQ2" firstAttribute="top" secondItem="Y36-ev-iR1" secondAttribute="bottom" constant="57" id="cLS-Gi-m5c"/>
+                            <constraint firstItem="aSa-zi-Rqz" firstAttribute="top" secondItem="DOm-BQ-oQ2" secondAttribute="bottom" constant="16" id="maG-VW-RhH"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SXe-2V-we5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="674" y="402"/>
+        </scene>
+    </scenes>
+</document>
