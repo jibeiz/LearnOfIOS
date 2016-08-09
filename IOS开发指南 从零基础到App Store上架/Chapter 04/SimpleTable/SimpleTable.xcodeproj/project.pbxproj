@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		217B6FAE1D4A2E6400B7A3C8 /* team_dictionary.plist in Resources */ = {isa = PBXBuildFile; fileRef = 217B6FAD1D4A2E6400B7A3C8 /* team_dictionary.plist */; };
 		6CA881E11D105259007DEBA1 /* Algeria.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CA881C11D105259007DEBA1 /* Algeria.png */; };
 		6CA881E21D105259007DEBA1 /* Argentina.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CA881C21D105259007DEBA1 /* Argentina.png */; };
 		6CA881E31D105259007DEBA1 /* Australia.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CA881C31D105259007DEBA1 /* Australia.png */; };
@@ -67,6 +68,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		217B6FAD1D4A2E6400B7A3C8 /* team_dictionary.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = team_dictionary.plist; path = "../../../../IOS开发指南 从零基础到App Store上架_Source/ch04/4.3.1 IndexTable/IndexTable/team_dictionary.plist"; sourceTree = "<group>"; };
 		6CA881C11D105259007DEBA1 /* Algeria.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Algeria.png; sourceTree = "<group>"; };
 		6CA881C21D105259007DEBA1 /* Argentina.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Argentina.png; sourceTree = "<group>"; };
 		6CA881C31D105259007DEBA1 /* Australia.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Australia.png; sourceTree = "<group>"; };
@@ -178,13 +180,13 @@
 				6CA881DF1D105259007DEBA1 /* Uruguay.png */,
 				6CA881E01D105259007DEBA1 /* USA.png */,
 			);
-			path = "球队图片";
+			name = "球队图片";
+			path = "../球队图片";
 			sourceTree = "<group>";
 		};
 		6CEEDE9C1D100BC30043C430 = {
 			isa = PBXGroup;
 			children = (
-				6CA881C01D105259007DEBA1 /* 球队图片 */,
 				6CEEDEA71D100BC30043C430 /* SimpleTable */,
 				6CEEDEC11D100BC30043C430 /* SimpleTableTests */,
 				6CEEDECC1D100BC30043C430 /* SimpleTableUITests */,
@@ -205,6 +207,7 @@
 		6CEEDEA71D100BC30043C430 /* SimpleTable */ = {
 			isa = PBXGroup;
 			children = (
+				6CA881C01D105259007DEBA1 /* 球队图片 */,
 				6CEEDEAB1D100BC30043C430 /* AppDelegate.h */,
 				6CEEDEAC1D100BC30043C430 /* AppDelegate.m */,
 				6CEEDEAE1D100BC30043C430 /* ViewController.h */,
@@ -212,6 +215,8 @@
 				6CEEDEB11D100BC30043C430 /* Main.storyboard */,
 				6CEEDEB61D100BC30043C430 /* LaunchScreen.storyboard */,
 				6CEEDEB91D100BC30043C430 /* Info.plist */,
+				6CEEDEDB1D1010A90043C430 /* team.plist */,
+				217B6FAD1D4A2E6400B7A3C8 /* team_dictionary.plist */,
 				6CEEDEA81D100BC30043C430 /* Supporting Files */,
 			);
 			path = SimpleTable;
@@ -220,7 +225,6 @@
 		6CEEDEA81D100BC30043C430 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				6CEEDEDB1D1010A90043C430 /* team.plist */,
 				6CEEDEA91D100BC30043C430 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -354,6 +358,7 @@
 				6CA881F01D105259007DEBA1 /* Italy.png in Resources */,
 				6CA881F71D105259007DEBA1 /* Portugal.png in Resources */,
 				6CA881EE1D105259007DEBA1 /* Holland.png in Resources */,
+				217B6FAE1D4A2E6400B7A3C8 /* team_dictionary.plist in Resources */,
 				6CA881E31D105259007DEBA1 /* Australia.png in Resources */,
 				6CA881EB1D105259007DEBA1 /* Germany.png in Resources */,
 				6CA881F51D105259007DEBA1 /* NorthKorea.png in Resources */,

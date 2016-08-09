@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "CustomCell.h"
 
 @interface ViewController ()
 
@@ -22,6 +23,18 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (NSInteger)tableView:(UITableViewCell *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return 1;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSString *CellIdentifier = @"CustomCell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier: CellIdentifier];
+    
 }
 
 @end
