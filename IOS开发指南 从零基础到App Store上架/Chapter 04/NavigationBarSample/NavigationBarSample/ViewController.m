@@ -37,7 +37,13 @@
     [self.view addSubview:navigationBar];
     
     // 2.添加标签
+    CGFloat labelWidth = 84;
+    CGFloat labelHeight = 21;
+    CGFloat labelTopView = 198;
     
+    self.label = [[UILabel alloc] initWithFrame:CGRectMake((screen.size.width-labelWidth)/2, labelTopView, labelWidth, labelHeight)];
+    self.label.textAlignment = NSTextAlignmentCenter;
+    [self.view addSubview:self.label];
     // Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -46,4 +52,13 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)save:(id)sender
+{
+    self.label.text = @"点击Save";
+}
+
+- (void)add:(id)sender
+{
+    self.label.text = @"点击Add";
+}
 @end
